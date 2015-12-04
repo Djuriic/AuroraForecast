@@ -1,6 +1,9 @@
-This is a simple Aurora tracking script. 
+This is a simple Aurora tracking script from
+http://www.aurora-service.org/aurora-forecast/
+http://www.aurora-service.eu/aurora-forecast/
 
-The script is pretty stright forward. It will take information from '' www.aurora-service.eu '' and print it out on the terminal.
+Script is simple and straight forward. Run the script in the terminal and it will display the information from the webpage.
+The information updates everyday on the website so don't forget to check the script from time to time.
 
 
 
