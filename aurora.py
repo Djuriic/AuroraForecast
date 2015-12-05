@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''
 Name: Aurora Forecast
-Update Date: December 4, 2015
+Update Date: December 6, 2015
 
 '''
 from datetime import datetime
@@ -32,9 +32,9 @@ def EuropeanTime():
         print ("\t\tEurope Aurora Level")
         for element in auroraLevel:
             print (element.text_content())
+
             print ("Your time is : ", timeString)
             print ("UT time is : ", datetime.utcnow().strftime("%Y-%m-%d : %H:%M:%S",))
-
             main()
 
 def NAmericanTime():
@@ -56,11 +56,13 @@ def NAmericanTime():
         for element in auroraLevel:
             print (element.text_content())
 
-            print ("Your time is : ", timeString)
+            print ("Your time is :", timeString)
             print ("UT time is : ", datetime.utcnow().strftime("%Y-%m-%d : %H:%M:%S",))
             main()
 
+
 def main():
+    print ("**************************************************")
     print ("Choose which region you are in: \n")
     print ("\t1. Europe")
     print ("\t2. North America")
@@ -77,8 +79,10 @@ def main():
                 return NAmericanTime()
             elif choice == 0:
                 choices = False
+            else:
+                print("Please choose,\n 1)Europe,\n 2)North America, \n 3)Quit")
         except ValueError:
-            print("Invalid number")
+            print("input is not a integer, Try again")
 
 
 if __name__ == '__main__':
