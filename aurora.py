@@ -23,19 +23,9 @@ def EuropeanTime():
         timeLevel = tree.xpath('//*[@id="left-col"]/div[1]/div[2]/p[4]')
         auroraLevel = tree.xpath('//*[@id="left-col"]/div[1]/div[2]/pre/p/strong')
 
-        # Print out Time and Date
-        for element in timeLevel:
-            print ('\n')
-            print (element.text_content())
-            print ('\n')
-        # Print out the 3 days level
-        print ("\t\tEurope Aurora Level")
-        for element in auroraLevel:
-            print (element.text_content())
-
-            print ("Your time is : ", timeString)
-            print ("UT time is : ", datetime.utcnow().strftime("%Y-%m-%d : %H:%M:%S",))
-            main()
+        print ("\t\tEuropean Aurora Level")
+        printLevel(timeLevel, auroraLevel)
+        main()
 
 def NAmericanTime():
         # Get information for North American , Time and Date
@@ -46,19 +36,22 @@ def NAmericanTime():
         timeLevel = tree.xpath('//*[@id="left-col"]/div[1]/div[2]/p[2]')
         auroraLevel = tree.xpath('//*[@id="left-col"]/div[1]/div[2]/pre')
 
+        print ("\t\tNorth America Aurora Level")
+        printLevel(timeLevel, auroraLevel)
+        main()
+
+def printLevel(tLevel, aLevel ):
         # Print out Time and Date
-        for element in timeLevel:
+        for element in tLevel:
             print ('\n')
             print (element.text_content())
             print ('\n')
         # Print out the 3 days level
-        print ("\t\tNorth America Aurora Level")
-        for element in auroraLevel:
+        for element in aLevel:
             print (element.text_content())
-
             print ("Your time is :", timeString)
             print ("UT time is : ", datetime.utcnow().strftime("%Y-%m-%d : %H:%M:%S",))
-            main()
+            return
 
 
 def main():
