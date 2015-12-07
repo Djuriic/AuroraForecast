@@ -1,17 +1,12 @@
+# Aurora Forecast
+
 This is a simple Aurora tracking script that takes data from
+
 http://www.aurora-service.org/aurora-forecast/
+
 http://www.aurora-service.eu/aurora-forecast/
 
-The script uses python3, tkinter, requests and PIL 
-
-Run the script in the terminal and it will display the information from the web page.
-The information updates everyday on the website so don't forget to check the script from time to time.
-
-
-
-#			 	    	*************************
-#			       		** What is KP-numbers? **
-#				    	*************************
+#			       		What is KP-numbers? 
 
 The most important thing to know about aurora watching is the kp index. It is a scale of numbers between 0 – 9 known as the planetary index. Using this scale, it is easy to determine what kp number you need to have a chance of seeing auroras where you are. So look on the map, have a look which line and which corresponding kp number are on top of or just above your location. Remember this number, it will never change (well the magnetic poles are moving slowly each year so you may need to review it again in about 20 years).
 
@@ -33,15 +28,28 @@ G3 = Kp7
 G4 = Kp8
 G5 = Kp9
 
+### Installation
+
+You need to have python3 version installed.
+
+And the following plugins
+
+### Plugins
+
+* Tkinter
+* requests
+* PIL (ImageTK, Image etc)
 
 
-INSTALLING
-If you have problem using the script and problem viewing the picture do the following:
-Some packages may be missing on your system which can result in failed script and other behaviour
-On Linux:
+### Todos
 
-sudo apt-get install python3-pil 
 
-sudo apt-get install python3-imgaing-tk
+
+
+License
+----
+
+MIT
+
 
 
