@@ -52,4 +52,5 @@ License
 MIT
 
 
-
+### Thanks to
+Aurora Forecast for a great webpage with alot of information. Thanks to you I can share this simple script with other spaces and aurora borealis enthusiasts.
