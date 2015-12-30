@@ -23,9 +23,13 @@ Geomagnetic Storms
 Geomagnetic storms are labelled G1 to G5. It is a period when there is strong to very strong geomagnetic activity due to a lot of build up in Earth’s magnetotail which causes magnetic reconnection and snap back to occur, this accelerates a lot of particles back towards earth (a natural particle accelerator if you will) which can spark really awesome northern/southern lights displays. As aurora chasers, geomagnetic storms are what we are always hoping for. Here is a table which converts the G into Kp.
 
 G1 = Kp5
+
 G2 = Kp6
+
 G3 = Kp7
+
 G4 = Kp8
+
 G5 = Kp9
 
 ### Installation
