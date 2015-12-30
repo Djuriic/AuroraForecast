@@ -18,7 +18,7 @@ timeString  = time.strftime("%Y-%m-%d : %H:%M:%S", localtime)
 
 #******************************************************************************#
 #******************************************************************************#
-# TODO: MAKE THIS TWO CODES INTO ONE. CHECK TODO LIST
+# TODO: MAKE THIS TWO CODES INTO ONE IF POSSIBLE
 def auroraMapEurope():
 
         # Create the main window
@@ -38,11 +38,10 @@ def auroraMapEurope():
 
         main()
 
-
 def auroraMapNAmerica():
         # Create the main window
         window = tkinter.Tk()
-        window.title("Aurora Norh America")
+        window.title("Aurora North America")
         window.geometry("900x500")
         window.configure(background='black')
 
@@ -91,12 +90,14 @@ def NAmericanTime():
 
         print ("\t\tNorth America Aurora Level")
         printLevel(timeLevel, auroraLevel)
+
         print("Do you want to display Aurora Level map?: y/n ")
         choice = input(">> ")
         if choice == 'y':
             auroraMapNAmerica()
         else:
             main()
+
 
 def printLevel(tLevel, aLevel ):
         # Print out Time and Date
@@ -118,16 +119,17 @@ def main():
     print ("\t2. North America")
     print ("\t0. To quit")
 
-    choice = True
+    mainLoop = True
 
-    while choice:
+    while mainLoop:
             choice = int(input(" >> "))
             if choice == 1:
                 return EuropeanTime()
             elif choice == 2:
                 return NAmericanTime()
             elif choice == 0:
-                choices = False
+                print ("Good Bye")
+                mainLoop = False
             else:
                 print ("****************************************")
                 print("Please choose,\n 1)Europe,\n 2)North America, \n 3)Quit")
