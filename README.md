@@ -22,6 +22,8 @@ Geomagnetic Storms
 
 Geomagnetic storms are labelled G1 to G5. It is a period when there is strong to very strong geomagnetic activity due to a lot of build up in Earth’s magnetotail which causes magnetic reconnection and snap back to occur, this accelerates a lot of particles back towards earth (a natural particle accelerator if you will) which can spark really awesome northern/southern lights displays. As aurora chasers, geomagnetic storms are what we are always hoping for. Here is a table which converts the G into Kp.
 
+
+
 G1 = Kp5
 
 G2 = Kp6
@@ -32,6 +34,8 @@ G4 = Kp8
 
 G5 = Kp9
 
+
+
 ### Installation
 
 You need to have python3 version installed.
@@ -40,10 +44,19 @@ And the following plugins
 
 ### Plugins
 
-* Tkinter
-* requests
-* PIL (ImageTK, Image etc)
+### Tkinter
+```
+sudo apt-get install python3-tk
+```
 
+### requests
+```
+sudo pip3 install requests
+```
+### PIL (ImageTK, Image etc)
+```
+sudo apt-get install python3-imaging-tk
+```
 
 ### Todos
 
@@ -57,4 +70,4 @@ MIT
 
 
 ### Thanks to
-Aurora-Service forecast for a great webpage with alot of information. Thanks to you I can share this simple script with other spaces and aurora borealis enthusiasts.
+[Aurora-Service](http://www.aurora-service.eu/aurora-forecast/ "Aurora Service/forecast") forecast for a great webpage with alot of information. Thanks to you I can share this simple script with other spaces and aurora borealis enthusiasts.
